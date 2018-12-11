@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.*;
+
 public class Uppgifter {
 
     public static void main(String[] args) {
@@ -14,20 +15,19 @@ public class Uppgifter {
     }
 
     static void looptest() {
-        // create array list object
-        List arrlist = new ArrayList();
+        // Create an array
+        Integer[] array = new Integer[]{1, 2, 3, 4};
 
-        // populate the list
-        arrlist.add("A");
-        arrlist.add("B");
-        arrlist.add("C");
+        Integer.add("ok")
+        //int[] array = new int[]{1, 2, 3, 4}; //does not work
 
-        System.out.println("Initial collection: "+arrlist);
+        // Shuffle the elements in the array
+        List<Integer> l = Arrays.asList(array);
+        System.out.println(l);
 
-        // shuffle the list
-        Collections.shuffle(arrlist);
+        Collections.shuffle(l);
 
-        System.out.println("Final collection after shuffle: "+arrlist);
+        System.out.println(l);
     }
 
     static void byteValueTest() {
