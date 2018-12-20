@@ -5,7 +5,6 @@ import java.util.*;
 public class Uppgifter {
 
     public static void main(String[] args) {
-        lektest();
         //repetitionsfrågor();
         //looptest();
         //byteValueTest();
@@ -15,12 +14,6 @@ public class Uppgifter {
         //test();
         //System.out.println();
         //v50Torsdag();
-    }
-
-    static void lektest() {
-        double skoNr = 3.9;
-        int helaSkoNr = (int)skoNr;
-        System.out.println(helaSkoNr);
     }
 
     static void repetitionsfrågor() {
