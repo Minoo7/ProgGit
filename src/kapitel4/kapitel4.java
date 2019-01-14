@@ -8,7 +8,51 @@ import java.util.Arrays;
 public class kapitel4 {
     public static void main(String[] args) {
         //test();
-        övningar();
+        //övningar();
+        classroomövningar();
+    }
+
+    static void classroomövningar() {
+        Scanner input = new Scanner(System.in);
+
+        /*
+        System.out.println("1.");
+        System.out.println("Hur många liter färg ska köpas?");
+        float liter = input.nextInt();
+        float hinkar = (int) liter / 5;
+
+        float extra = liter%5;
+        if (extra != 0) {
+            hinkar++;
+        }
+        else {
+            extra = 5;
+        }
+        System.out.println((int)liter + " liter kräver " + (int)hinkar + " hinkar, den sista hinken innehåller " + (int)extra + " liter");
+        */
+
+        /*
+        System.out.println("2.");
+        System.out.println("Mata in 3 tal till a, b och c");
+        System.out.print("a = ");
+        float a = input.nextFloat();
+        System.out.print("b = ");
+        float b = input.nextFloat();
+        System.out.print("c = ");
+        float c = input.nextFloat();
+        float produkten = a * b * c;
+        float summan = a + b + c;
+        float differensen = produkten - summan;
+        System.out.println("Differensen av " + produkten + " - " + summan + " är = " + differensen);
+        */
+
+        System.out.println("3.");
+        int a = 10;
+        int Aplusplus = a++;
+        int plusplusA = ++a;
+        System.out.println("a = " + a);
+        System.out.println("a++ = " + Aplusplus);
+        System.out.println("");
     }
 
     static void övningar() {
@@ -36,6 +80,8 @@ public class kapitel4 {
         System.out.println("produkt = " + produkt);*/
 
         System.out.println("Övning 4.4");
+        double a = 12%5;
+        System.out.println(a);
 
     }
 
