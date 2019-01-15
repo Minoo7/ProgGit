@@ -9,7 +9,41 @@ public class kapitel4 {
     public static void main(String[] args) {
         //test();
         //övningar();
-        classroomövningar();
+        //classroomövningar();
+        uppgifter();
+    }
+
+    static void uppgifter() {
+        Scanner input = new Scanner(System.in);
+
+        /*System.out.println("Skriv ett heltal");
+        int heltal = input.nextInt();
+        int ogheltal = heltal;
+        System.out.println(heltal + " + 1 = " + ++heltal);
+        System.out.println(heltal + " * 2 = " + (heltal*=2));
+        System.out.println(heltal + " - 6 = " + (heltal-=6));
+        System.out.println(heltal + " / 2 = " + (heltal/=2));
+        System.out.println(heltal + " + 3 = " + (heltal+=3));
+        System.out.println(heltal + " - " + ogheltal + " = " + (heltal-=ogheltal));
+        System.out.println("Nu har du fått talet 1");*/
+
+        /*int tal = input.nextInt();
+        int ogtal = tal;
+        int del = tal / 1000;
+        System.out.println(del %= 10);
+        del++;
+        System.out.println(tal %= 1000);
+        System.out.println(ogtal -= tal);
+        System.out.println(ogtal /= 1000);
+        System.out.println(ogtal += 1);
+        System.out.println(ogtal * 1000);*/
+
+        System.out.println("Ange tid i sekunder");
+        int tid = input.nextInt();
+        int sekunder = tid % 60;
+        int timmar = tid / 3600;
+        int minuter = (tid - (timmar * 3600))/60;
+        System.out.println(timmar + " h " + minuter + " min " + sekunder + " sek");
     }
 
     static void classroomövningar() {
@@ -47,12 +81,9 @@ public class kapitel4 {
         */
 
         System.out.println("3.");
-        int a = 10;
-        int Aplusplus = a++;
-        int plusplusA = ++a;
-        System.out.println("a = " + a);
-        System.out.println("a++ = " + Aplusplus);
-        System.out.println("");
+        double tal1 = 8;
+        int tal2 = 8;
+        System.out.println(tal1/tal2);
     }
 
     static void övningar() {
