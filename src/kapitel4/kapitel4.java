@@ -10,7 +10,7 @@ public class kapitel4 {
         //test();
         //övningar();
         //classroomövningar();
-        uppgifter();
+        //uppgifter();
     }
 
     static void uppgifter() {
