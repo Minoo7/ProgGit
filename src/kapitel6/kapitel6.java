@@ -7,7 +7,8 @@ import java.util.Arrays;
 
 public class kapitel6 {
     public static void main(String[] args) {
-    övningar();
+    //övningar();
+    uppgifter();
     }
 
     static void övningar() {
@@ -20,7 +21,9 @@ public class kapitel6 {
         int summa = tal1 + tal2 + tal3;
 
         System.out.println("Summan är = " + summa);
+    }
 
+    static void uppgifter() {
 
     }
 
