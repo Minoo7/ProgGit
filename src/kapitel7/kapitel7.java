@@ -12,7 +12,7 @@ public class kapitel7 {
     }
 
     static void övningar() {
-        Scanner input = new Scanner (System.in);
+        Scanner input = new Scanner(System.in);
 
         //Övning 7.2
         /*int tanken = 50;
@@ -57,18 +57,56 @@ public class kapitel7 {
         System.out.println("Din totala kostnad är " + pris + " kr");*/
 
         //Övning 7.7
-        System.out.println("MENY");
+        /*System.out.println("MENY");
         System.out.println("1.  Insättning");
         System.out.println("2.  Uttag");
         System.out.println("3.  Visa behållning");
-        double behållning = 100;
+        double behållning = 1000;
         int val = input.nextInt();
         switch(val) {
             case 1:
                 System.out.println("Hur mycket vill du insätta?");
                 System.out.print("Insättning: ");
                 double insättning = input.nextDouble();
-        }
-    }
+                behållning += insättning;
+                System.out.println("Behållning = " + behållning);
+                break;
+            case 2:
+                System.out.println("Hur mycket vill du ta ut?");
+                System.out.print("Uttag: ");
+                double uttag = input.nextDouble();
+                behållning -= uttag;
+                System.out.println("Behållning = " + behållning);
+                break;
+            case 3:
+                System.out.println("Behållning = " + behållning);
+                break;
 
+            default:
+                System.out.println("Ogiltig input");
+        }*/
+
+        //Övning 7.8
+        /*System.out.println("Skriv in två strängar");
+        String s1 = input.nextLine();
+        String s2 = input.nextLine();
+        String Cs1 = s1.toUpperCase();
+        String Cs2 = s2.toUpperCase();
+        int number = (Cs1.compareTo(Cs2));
+        if (number < 0) {
+            System.out.println(s1 + " " + s2);
+        }
+        else {
+            System.out.println(s2 + " " + s1);
+        }*/
+
+        int tal1 = 5;
+        int tal2 = 10;
+        int tal3 = 2;
+        int max = tal1 > tal2 ? tal1 : tal2;
+        //System.out.println(((tal1) : (tal2));
+        System.out.println(max);
+        System.out.println(tal1);
+        System.out.println(tal2);
+    }
 }
