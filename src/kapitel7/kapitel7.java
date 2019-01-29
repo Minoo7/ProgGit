@@ -9,6 +9,37 @@ public class kapitel7 {
 
     public static void main(String[] args) {
         övningar();
+        uppgifter();
+    }
+
+    static void uppgifter() {
+        Scanner input = new Scanner(System.in);
+
+        //Uppgift 7.9
+        System.out.println("Vi söker nya personer att anställa på AB Diskriminering");
+        System.out.println("Men vi måste ställa lite frågor först");
+        System.out.println("Vad är ditt kön?");
+        String kön = input.nextLine();
+        boolean vilkorKön = kön.contains("man");
+        System.out.println("Hur gammal är du?");
+        int ålder = input.nextInt();
+        boolean vilkorÅlder = ålder < 30;
+        System.out.println("Har du några barn");
+        String barn = input.nextLine();
+        boolean vilkorBarn = barn.contains("ja");
+        System.out.println("Eftersom du är");
+
+        //Uppgift 7.10
+        /*System.out.println("Skriv valfri text");
+        String text = input.nextLine();
+        System.out.println("Välj ord som ska sökas för i texten");
+        String ord = input.nextLine();
+        if (text.contains(ord)) {
+            System.out.println("Din text innehåller ordet " + "\"" + ord + "\"");
+        }
+        else {
+            System.out.println("Din text innehåller ej ordet " + "\"" + ord + "\"");
+        }*/
     }
 
     static void övningar() {
@@ -100,13 +131,31 @@ public class kapitel7 {
             System.out.println(s2 + " " + s1);
         }*/
 
-        int tal1 = 5;
-        int tal2 = 10;
-        int tal3 = 2;
-        int max = tal1 > tal2 ? tal1 : tal2;
-        //System.out.println(((tal1) : (tal2));
-        System.out.println(max);
-        System.out.println(tal1);
-        System.out.println(tal2);
+        //Övning 7.9
+        /*System.out.println("Skriv in två tal");
+        double tal1 = input.nextDouble();
+        double tal2 = input.nextDouble();
+        double max = tal1 > tal2 ? tal1 : tal2;
+        if (max == tal1) {
+            System.out.println("Största talet är tal1 vilket motsvarar = " + max);
+        }
+        else {
+            System.out.println("Största talet är tal2 vilket motsvarar = " + max);
+        }*/
+
+        //Övning 7.10
+        /*System.out.println("Är ditt kön man eller kvinna?");
+        String val = input.nextLine();
+        switch (val) {
+            case "man":
+                System.out.println("Du är en man.");
+                break;
+            case "kvinna":
+                System.out.println("Du är en kvinna.");
+                break;
+            default:
+                System.out.println("Fel input!");
+                break;
+        }*/
     }
 }
