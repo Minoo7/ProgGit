@@ -8,9 +8,9 @@ import java.util.Arrays;
 public class kapitel8 {
 
     public static void main(String[] args) {
-        test();
-        övningar();
-        //uppgifter();
+        //test();
+        //övningar();
+        uppgifter();
     }
 
     static void test() {
@@ -119,7 +119,7 @@ public class kapitel8 {
         System.out.println(gånger);*/
 
         //Övning 8.7
-        boolean fortsätt = true;
+        /*boolean fortsätt = true;
         while (fortsätt) {
 
             System.out.println("Miniräknare:");
@@ -147,11 +147,65 @@ public class kapitel8 {
                             fortsätt = false;
                     }
             }
-        }
+        }*/
+        /*int tal = 20;
+        String stal;
+        while (tal < 70) {
+            tal += 2;
+            stal = (Integer.toString(tal));
+            char sistatal = stal.charAt(stal.length() - 1);
+            if (tal == 52) {
+                System.out.print("x ");
+            }
+            else if (tal % 10 == 0) {
+                System.out.print((double) tal + " ");
+            }
+            else if (!(sistatal == '6')) {
+                System.out.print(stal + " ");
+            }
+        }*/
+
+        /*for (int n = 22; n <= 70; n +=2) {
+            if (n % 10 == 6) { // Om talet slutar på en sexa
+                continue;
+            }
+            if (n % 10 == 0) { // Om talet är ett jämt tiotal
+                System.out.print((double)n + " ");
+                continue;
+            }
+            if (n == 52) { // Om talet är 52, skriv ut x istället
+                System.out.print("x ");
+                continue;
+            }
+            System.out.print(n + " ");
+        }*/
     }
 
     static void uppgifter() {
+        Scanner input = new Scanner (System.in);
 
+        //8.1
+        // a)
+        /*for (int tal = 3; tal <= 10; tal++) {
+            System.out.print(tal + " ");
+        }*/
+        // b)
+        /*int tal = 3;
+        while (tal <= 10) {
+            System.out.print(tal++ + " ");
+        }*/
+        // c)
+        /*int tal = 3;
+        do {
+            System.out.print(tal++ + " ");
+        }
+        while (tal <= 10);*/
+
+        //8.2
+        //int[] fält = {input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()};
+        for (int[] fält = {input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()}; ; ) {
+            System.out.print(fält[4] + fält[3] + fält[2] + fält[1] + fält[0]);
+        }
     }
 
 }
