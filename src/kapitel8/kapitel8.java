@@ -181,6 +181,17 @@ public class kapitel8 {
         }*/
     }
 
+    public static void clearup() {
+        for (int i = 0; i <= 25; i++) {
+            System.out.println();
+        }
+    }
+    public static void cleardown() {
+        for (int i = 0; i <= 10; i++) {
+            System.out.println();
+        }
+    }
+
     static void uppgifter() {
         Scanner input = new Scanner (System.in);
 
@@ -203,18 +214,109 @@ public class kapitel8 {
 
         //8.2
 
-        int[] fält = new int[5];
+        /*int[] fält = new int[5];
         for (int i = 0; i < fält.length; i++) {
             fält[i] = input.nextInt();
         }
         for (int i = 4; i >= 0; i--) {
             System.out.println(fält[i]);
-        }
+        }*/
 
         //8.3
 
-        System.out.println("Skriv in längd");
-        int längd = input.nextInt();
+        /*System.out.print("Skriv ut rader: ");
+        int rader = input.nextInt();
+        System.out.print("Skriv ut kolumner: ");
+        int kolumner = input.nextInt();
+        System.out.println();
+        for (int a = 1; a <= rader; a++) {
+            for (int i = 1; i <= kolumner; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }*/
+
+        //8.4
+
+        /*boolean slut = true;
+        int pas = 0;
+        while (slut == true) {
+            System.out.println();
+            System.out.println("1.  Nollställ antalet passagerare.");
+            System.out.println("2.  Öka antalet passagerare med en.");
+            System.out.println("3.  Minska antalet passagerare med en.");
+            System.out.println("4.  Skriv ut antalet passagerare.");
+            System.out.println("5.  Avsluta.");
+            System.out.println();
+
+            int val = input.nextInt();
+            System.out.println();
+            switch (val) {
+                case 1:
+                    if (pas == 0) {
+                        System.out.println("Passagerare är redan 0");
+                    }
+                    else {
+                        pas = 0;
+                        System.out.println("Passagerare är nu " + pas);
+                    }
+                    break;
+                case 2:
+                    pas++;
+                    System.out.println("Passagerare är nu " + pas);
+                    break;
+                case 3:
+                    if (pas == 0) {
+                        System.out.println("Passagerare är redan 0");
+                    }
+                    else {
+                        System.out.println("Minskar passagerare med en");
+                        pas--;
+                        System.out.println("Passagerare är nu " + pas);
+                    }
+                    break;
+                case 4:
+                    System.out.println("Passagerare är = " + pas);
+                    break;
+                case 5:
+                    slut = false;
+                    break;
+            }
+        }*/
+
+        //8.5
+
+        /*System.out.println("Skriv in tal");
+        int n = input.nextInt();
+        int summa = 0;
+        for (int i = 1; i < n; i++) {
+            summa += i;
+            System.out.print(i + " + ");
+        }
+        System.out.print(n + "\n");
+        System.out.println("Summan av dessa tal är = " + (summa+n));
+        */
+
+        //8.6
+
+        /*System.out.println("Skriv in tal");
+        int n = input.nextInt();
+        int summa = 1;
+        for (int i = 1; i < n; i++) {
+            summa *= i;
+            System.out.print(i + " * ");
+        }
+        System.out.print(n + "\n");
+        System.out.println("Summan av dessa tal är = " + (summa*n));*/
+
+        //8.7
+
+        int[] tal = new int[3];
+        System.out.println("Skriv tre positiva tal");
+        for (int i = 1; i <= 3; i++) {
+            tal[i] = input.nextInt();
+        }
+
     }
 
 }
