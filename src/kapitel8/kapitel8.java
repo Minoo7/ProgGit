@@ -202,10 +202,19 @@ public class kapitel8 {
         while (tal <= 10);*/
 
         //8.2
-        //int[] fält = {input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()};
-        for (int[] fält = {input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()}; ; ) {
-            System.out.print(fält[4] + fält[3] + fält[2] + fält[1] + fält[0]);
+
+        int[] fält = new int[5];
+        for (int i = 0; i < fält.length; i++) {
+            fält[i] = input.nextInt();
         }
+        for (int i = 4; i >= 0; i--) {
+            System.out.println(fält[i]);
+        }
+
+        //8.3
+
+        System.out.println("Skriv in längd");
+        int längd = input.nextInt();
     }
 
 }
