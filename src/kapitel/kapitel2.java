@@ -1,8 +1,10 @@
+package kapitel;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.*;
 
-public class Uppgifter {
+public class kapitel2 {
 
     public static void main(String[] args) {
         //repetitionsfrågor();

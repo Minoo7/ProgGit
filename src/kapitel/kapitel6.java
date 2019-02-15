@@ -1,4 +1,4 @@
-package kapitel6;
+package kapitel;
 
 import java.sql.SQLOutput;
 import java.util.List;

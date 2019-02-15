@@ -1,4 +1,4 @@
-package kapitel8;
+package kapitel;
 
 import java.sql.SQLOutput;
 import java.util.List;
@@ -311,11 +311,11 @@ public class kapitel8 {
 
         //8.7
 
-        int[] tal = new int[3];
+        /*int[] tal = new int[3];
         System.out.println("Skriv tre positiva tal");
         for (int i = 1; i <= 3; i++) {
             tal[i] = input.nextInt();
-        }
+        }*/
 
     }
 

@@ -1,4 +1,6 @@
-public class MyProgram {
+package kapitel;
+
+public class kapitel1 {
 
     public static void main(String[] args) {
         // Variabler skapas med typ namn = värde;
