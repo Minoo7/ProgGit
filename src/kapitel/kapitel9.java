@@ -18,8 +18,8 @@ public class kapitel9 {
     public static void main(String[] args) {
         //test();
         //exempel();
-        övningar();
-        //uppgifter();
+        //övningar();
+        uppgifter();
     }
 
     static void exempel() {
@@ -186,8 +186,55 @@ public class kapitel9 {
         return 3.14 * (r*r) * h;
     }
 
-    static void uppgifter() {
+    static int _1a(String s, char t) {
+        int antal = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == t) {
+                antal++;
+            }
+        }
+        return antal;
+    }
+    static int _1b(String s, char[] t) {
+        int antal = 0;
+        for (int i = 0; i < t.length; i++) {
+            for (int j = 0; j < s.length(); j++) {
+                if (t[i] == s.charAt(j)) {
+                    antal++;
+                }
+            }
+        }
+        return antal;
+    }
+    static int _2a(int N) {
+        int k = 1;
+        for (int i = 1; i <= N; i++) {
+            k *= i;
+        }
+        return k;
+    }
+    static int _2b(int n, int k) {
+        int täljare = _2a(n);
+        int Kfakultet = _2a(k);
+        int nMIk = _2a(n-k);
 
+        int NavK = täljare/(Kfakultet*nMIk);
+        return NavK;
+    }
+
+
+    static void uppgifter() {
+        //1.    a)
+        //System.out.println(_1a("bannan", 'k'));
+
+        //1.    b)
+        //System.out.println(_1b("Lille Skutt", new char[]{'e','t'}));
+
+        //2.    a)
+        //System.out.println(_2a(5));
+
+        //2.    b)
+        System.out.println(_2b(12, 5));
     }
 
 }
