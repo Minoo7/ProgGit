@@ -6,12 +6,12 @@ public class ProvKapEttTillNio_MALL {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        uppgift1_2poäng();
-        input.nextLine();
+        //uppgift1_2poäng();
+        //input.nextLine();
         //uppgift2_3poäng();
-        input.nextLine();
-        //uppgift3_4poäng();
-        input.nextLine();
+        //input.nextLine();
+        uppgift3_4poäng();
+        //input.nextLine();
     }
 
 
@@ -36,7 +36,6 @@ public class ProvKapEttTillNio_MALL {
         System.out.print("tal2: ");
         int tal2 = input.nextInt();
         System.out.println(tal1 + " * " + tal2 + " = " + produktenAv(tal1, tal2));
-        System.out.println(5 % 2);
     }
 
     static int produktenAv(int tal1, int tal2) {
@@ -73,6 +72,48 @@ public class ProvKapEttTillNio_MALL {
         2
         14 i basen 10 är 10110 i basen 2.
      */
+
+        String binary="";
+
+        //int decimal = 6;
+
+        int tt = 11;
+
+        while(tt>0)
+        {
+            System.out.println("Binary: " + binary);
+            binary=(tt%5)+binary;
+            System.out.println("Binary: " + binary);
+            tt=tt/5;
+            System.out.println("tt: " + tt);
+
+        }
+
+        /*while(decimal>0)
+        {
+
+            binary=(decimal%5)+binary;
+            System.out.println(binary);
+            decimal=decimal/5;
+
+        }*/
+
+
+        System.out.println("binary is:"+binary);
+        //konverteraMellanBaser(tal, talbas);
+
+    }
+
+    static int konverteraMellanBaser(int tal, int talbas) {
+        //int kTal = Integer.parseInt(Integer.toString(tal, talbas));
+        return Integer.parseInt(Integer.toString(tal, talbas));
+    }
+
+    static int upphöjt(int x, int a) {
+        for (int i = 1; i < a; i++) {
+            x *= x;
+        }
+        return x;
     }
 
 }
