@@ -108,65 +108,51 @@ public class Prov {
                     );
                     char val2 = Character.toUpperCase(input.next().charAt(0));
                     switch (val2) {
-                        case ('V'): {
-                            System.out.println(
-                                "Vilken figur vill du beräkna Volymen för ?\n" +
-                                "\n" +
-                                "[C] Cylinder\n" +
-                                "[R] Rätblock\n" +
-                                "[S] Sfär"
-                            );
-                            char val3 = Character.toUpperCase(input.next().charAt(0));
-                            switch (val3) {
-                                case ('C'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                                case ('R'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                                case ('S'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                            }
+                        case ('+'): {
+                            System.out.println("Skriv in två tal");
+                            System.out.print("tal 1: ");
+                            int tal1 = input.nextInt();
+                            System.out.print("tal 2: ");
+                            int tal2 = input.nextInt();
+                            System.out.println(tal1 + " + " + tal2 + " = " + (tal1+tal2));
                             break;
                         }
-                        case ('A'): {
-                            System.out.println(
-                                    "Vilken figur vill du beräkna Arean för ?\n" +
-                                            "\n" +
-                                            "[C] Cylinder\n" +
-                                            "[R] Rätblock\n" +
-                                            "[S] Sfär"
-                            );
-                            char val3 = Character.toUpperCase(input.next().charAt(0));
-                            switch (val3) {
-                                case ('C'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                                case ('R'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                                case ('S'): {
-                                    System.out.println(Suträkning(val2, val3));
-                                    beräkning(val2, val3);
-                                    break;
-                                }
-                            }
+                        case ('-'): {
+                            System.out.println("Skriv in två tal");
+                            System.out.print("tal 1: ");
+                            int tal1 = input.nextInt();
+                            System.out.print("tal 2: ");
+                            int tal2 = input.nextInt();
+                            System.out.println(tal1 + " - " + tal2 + " = " + (tal1-tal2));
+                            break;
+                        }
+                        case ('*'): {
+                            System.out.println("Skriv in två tal");
+                            System.out.print("tal 1: ");
+                            int tal1 = input.nextInt();
+                            System.out.print("tal 2: ");
+                            int tal2 = input.nextInt();
+                            System.out.println(tal1 + " * " + tal2 + " = " + (tal1*tal2));
+                            break;
+                        }
+                        case ('%'): {
+                            System.out.println("Skriv in två tal");
+                            System.out.print("tal 1: ");
+                            int tal1 = input.nextInt();
+                            System.out.print("tal 2: ");
+                            int tal2 = input.nextInt();
+                            System.out.println(tal1 + " % " + tal2 + " = " + (tal1%tal2));
                             break;
                         }
                     }
                     restart = promptR();
                     break;
+                }
+                case ('D'): {
+                    System.out.println("Skriv in formeln");
+                    System.out.print("Formel: ");
+                    double formel = input.nextDouble();
+
                 }
             }
         }
