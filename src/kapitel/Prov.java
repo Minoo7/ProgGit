@@ -9,7 +9,16 @@ public class Prov {
     static final double PI = 3.14;
 
     public static void main(String[] args) {
-        meny();
+        ///meny();
+        System.out.println(solve(5));
+    }
+
+    public static int solve(int y){
+        int x=0;
+        while(y>(x+1)*2-3) {
+            x++;
+        }
+        return x;
     }
 
     public static void meny() {
