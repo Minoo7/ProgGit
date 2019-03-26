@@ -101,6 +101,9 @@ public class ProvKapEttTillNio_MALL {
 
         System.out.println("binary is:"+binary);
         //konverteraMellanBaser(tal, talbas);
+        
+        
+        //Reverse talbas: ogtal = (talbas*tal(rest)) + tal(resy)
 
     }
 
