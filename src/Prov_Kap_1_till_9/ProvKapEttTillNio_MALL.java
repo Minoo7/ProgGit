@@ -103,7 +103,12 @@ public class ProvKapEttTillNio_MALL {
         //konverteraMellanBaser(tal, talbas);
         
         
-        //Reverse talbas: ogtal = (talbas*tal(rest)) + tal(resy)
+        //Reverse talbas: ogtal = (talbas*tal(rest)) + tal(rest) then normal process for new talbas
+
+        //5 st åttasidiga tärningar = 139 gånger = 1.39 procent
+
+        //Rövar språket joakim blir jojagog hohetoteror jojooakiokom
+        // o egter konsonant och sedan konsonanten i gen så s = sos
 
     }
 
