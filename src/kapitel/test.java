@@ -10,7 +10,11 @@ public class test {
     static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        test3dcube();
+        //test3dcube();
+        String output = String.format("%s = %d", "joe", 35);
+        System.out.printf(output);
+        System.out.printf("%d", 93);
+        //System.out.printf("Hello %!", "World");
     }
 
     static void test3dcube() {
