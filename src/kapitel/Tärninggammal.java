@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 
-public class Tärning{
+public class Tärninggammal {
 
     public static int roll() {
 
