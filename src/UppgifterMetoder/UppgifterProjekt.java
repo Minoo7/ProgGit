@@ -57,6 +57,7 @@ public class UppgifterProjekt {
                             win = true;
                         }
                         String P2 = input.next();
+                        // lägg till while
                         switch (P2) {
                             case("0,0"): _0_0 = 'O'; break;
                             case("0,1"): _0_1 = 'O'; break;
