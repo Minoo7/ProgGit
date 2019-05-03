@@ -11,10 +11,13 @@ public class UppgifterProjekt {
     static Random random = new Random();
 
     public static void main(String[] args) {
-        //System.out.println(random.nextInt(3));
-        TreIRad();
+        //TreIRad();
+        Miniräknare();
     }
     public static void TreIRad() {
+        /*ArrayList<Character> replace = new ArrayList<>();
+        replace.add(' ');
+        System.out.println(replace.get(0));*/
         char _0_0 = ' ';
         char _0_1 = ' ';
         char _0_2 = ' ';
@@ -172,5 +175,34 @@ public class UppgifterProjekt {
                 }
             }
         }
+    }
+
+    public static void Miniräknare() {
+        System.out.println("MINIRÄKNARE:");
+        String svar = input.next();
+        boolean found = false;
+        ArrayList<Character> number1 = new ArrayList<>();
+        ArrayList<Character> number2 = new ArrayList<>();
+        for (int i = 0; i < svar.length(); i++) {
+            //found = false;
+            if (svar.charAt(i) == '+') {found = true;}
+            if (svar.charAt(i) == '-') {found = true;}
+            if (svar.charAt(i) == '*') {found = true;}
+            if (svar.charAt(i) == '/') {found = true;}
+            if (svar.charAt(i) == '%') {found = true;}
+            if (!found) {
+                number1.add(svar.charAt(i));
+            }
+            //number1 = number1.split("[], ");
+            //if (found) {
+            //    number2.set(i,svar.charAt(i+1));
+            //}
+        }
+        System.out.println(number1);
+
+        /*int a = svar.indexOf('+');
+        if (!(svar.indexOf('+') == -1)) {
+            System.out.println(svar.indexOf('+'));
+        }*/
     }
 }
