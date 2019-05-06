@@ -1,10 +1,10 @@
 package UppgifterMetoder;
 
-import javafx.util.converter.CharacterStringConverter;
 import java.util.Random;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class UppgifterProjekt {
     static Scanner input = new Scanner(System.in);
@@ -181,24 +181,39 @@ public class UppgifterProjekt {
         System.out.println("MINIRÄKNARE:");
         String svar = input.next();
         boolean found = false;
+        char operator = ' ';
+        String number1F = "";
+        String number2F = "";
         ArrayList<Character> number1 = new ArrayList<>();
         ArrayList<Character> number2 = new ArrayList<>();
         for (int i = 0; i < svar.length(); i++) {
-            //found = false;
-            if (svar.charAt(i) == '+') {found = true;}
-            if (svar.charAt(i) == '-') {found = true;}
-            if (svar.charAt(i) == '*') {found = true;}
-            if (svar.charAt(i) == '/') {found = true;}
-            if (svar.charAt(i) == '%') {found = true;}
-            if (!found) {
-                number1.add(svar.charAt(i));
-            }
-            //number1 = number1.split("[], ");
-            //if (found) {
-            //    number2.set(i,svar.charAt(i+1));
-            //}
+            if (svar.charAt(i) == '+') {found = true; operator = '+';}
+            if (svar.charAt(i) == '-') {found = true; operator = '-';}
+            if (svar.charAt(i) == '*') {found = true; operator = '*';}
+            if (svar.charAt(i) == '/') {found = true; operator = '/';}
+            if (svar.charAt(i) == '%') {found = true; operator = '%';}
+            if (!found) {number1.add(svar.charAt(i));}
+            else {number2.add(svar.charAt(i));}
         }
-        System.out.println(number1);
+        for (Character i : number1){
+            number1F += i;
+        }
+        //number1.forEach((n) -> number1F.updateAndGet(v -> v + n));
+        int n1 = Integer.parseInt(number1F);
+
+        for (int i = 0; i < number2.size(); i++) {
+            number2F += number2.get(i);
+        }
+        int n2 = Integer.parseInt(number2F);
+
+        switch(operator) {
+            case('+'):
+                System.out.print(" = " + (n1+n2));
+                break;
+            case('*'):
+                System.out.print(" = " + (n1*n2));
+                break;
+        }
 
         /*int a = svar.indexOf('+');
         if (!(svar.indexOf('+') == -1)) {
